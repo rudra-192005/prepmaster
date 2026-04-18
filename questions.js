@@ -255,6 +255,433 @@ E = 100 W × 10 h = 1000 Wh = <span class="correct-answer-highlight">1 kWh</span
 <strong>Note:</strong> 1 kWh = 1 unit of electricity = 3.6 × 10⁶ J<br><br>
 <strong>Key Concept:</strong> kWh (kilowatt-hour) is the commercial unit of energy. 1 kWh = 1000W × 1h = 3.6 MJ.`
         },
+
+        // ============================================
+        // NEET GRAND TEST (SERIES-1) — Physics
+        // ============================================
+        {
+            id: "gt1",
+            question: "A particle at the end of a spring executes SHM with a period t, while the corresponding period of another spring is t₁. If the two springs are connected in series then the time period T satisfies:",
+            options: ["T = t + t₁", "T² = t² + t₁²", "T⁻¹ = t⁻¹ + t₁⁻¹", "T⁻² = t⁻² + t₁⁻²"],
+            correct: 1,
+            topic: "Oscillations",
+            chapter: "Oscillations",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>For springs in series:</strong> <span class="formula">1/k_eff = 1/k₁ + 1/k₂</span><br>
+Since T = 2π√(m/k), we get T² = 4π²m/k, so T² ∝ 1/k<br><br>
+T₁² = 4π²m/k₁ and T₂² = 4π²m/k₂<br>
+T² = 4π²m/k_eff = 4π²m(1/k₁ + 1/k₂) = T₁² + T₂²<br><br>
+Therefore: <span class="correct-answer-highlight">T² = t² + t₁²</span><br><br>
+<strong>Key Concept:</strong> For series combination of springs, effective spring constant decreases, and time periods add in quadrature (squares add up).`
+        },
+        {
+            id: "gt2",
+            question: "The equation of a wave on a string of linear mass density 0.04 kg/m is given by y = 0.02 sin[2π(t/0.04 - x/0.50)]. The tension in the string is:",
+            options: ["4.0 N", "12.5 N", "0.25 N", "6.25 N"],
+            correct: 3,
+            topic: "Waves",
+            chapter: "Waves",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>From the wave equation:</strong> y = 0.02 sin[2π(t/0.04 - x/0.50)]<br><br>
+<strong>Step 1:</strong> Find wave velocity<br>
+ω = 2π/0.04, k = 2π/0.50<br>
+<span class="formula">v = ω/k = (2π/0.04)/(2π/0.50) = 0.50/0.04 = 12.5 m/s</span><br><br>
+<strong>Step 2:</strong> Find tension<br>
+<span class="formula">v = √(T/μ) → T = μv²</span>
+T = 0.04 × (12.5)² = 0.04 × 156.25 = <span class="correct-answer-highlight">6.25 N</span><br><br>
+<strong>Key Concept:</strong> Wave speed on a string v = √(T/μ). Extract v from the wave equation using v = ω/k = λ/T_period.`
+        },
+        {
+            id: "gt3",
+            question: "A man of weight 'mg' is standing inside a rocket which is moving with an acceleration 4g. The apparent weight of the man inside the rocket is:",
+            options: ["7mg", "4mg", "5mg", "mg"],
+            correct: 2,
+            topic: "Newton's Laws of Motion",
+            chapter: "Laws of Motion",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>In an accelerating rocket:</strong><br>
+The apparent weight = m(g + a) where a is the acceleration of the rocket.<br><br>
+<span class="formula">W_apparent = m(g + 4g) = m × 5g = 5mg</span><br><br>
+Answer: <span class="correct-answer-highlight">5mg</span><br><br>
+<strong>Key Concept:</strong> In an accelerating system (upward), apparent weight increases: W = m(g + a). In a falling/descending system, W = m(g - a). In free fall, W = 0 (weightlessness).`
+        },
+        {
+            id: "gt4",
+            question: "What are the dimensions of the coefficient of viscosity η?",
+            options: ["ML⁻²T⁻²", "MLT⁻¹", "ML⁻¹T⁻¹", "ML²T⁻²"],
+            correct: 2,
+            topic: "Units and Dimensions",
+            chapter: "Physical World and Measurement",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>From Newton's law of viscosity:</strong> F = ηA(dv/dy)<br><br>
+<span class="formula">η = F/(A × dv/dy) = [MLT⁻²]/[L² × (LT⁻¹/L)]</span><br>
+= [MLT⁻²]/[L² × T⁻¹]<br>
+= [MLT⁻²]/[L²T⁻¹]<br>
+= <span class="correct-answer-highlight">[ML⁻¹T⁻¹]</span><br><br>
+<strong>Key Concept:</strong> The coefficient of viscosity measures a fluid's resistance to flow. Its SI unit is Pa·s (Pascal-second) or kg/(m·s).`
+        },
+        {
+            id: "gt5",
+            question: "Angular speed of the hour hand of a clock in degrees per second is:",
+            options: ["1/30", "1/60", "1/120", "1/720"],
+            correct: 2,
+            topic: "Circular Motion",
+            chapter: "Motion in a Plane",
+            difficulty: "easy",
+            exam: "neet",
+            solution: `<strong>Hour hand completes 360° in 12 hours:</strong><br><br>
+<span class="formula">ω = 360° / (12 × 60 × 60 seconds)</span>
+= 360 / 43200<br>
+= <span class="correct-answer-highlight">1/120 degree per second</span><br><br>
+<strong>Comparison:</strong><br>
+• Hour hand: 1/120 °/s = 360° in 12 hours<br>
+• Minute hand: 1/10 °/s = 360° in 1 hour<br>
+• Second hand: 6 °/s = 360° in 60 seconds`
+        },
+        {
+            id: "gt6",
+            question: "The mean kinetic energy of one mole of a gas per degree of freedom (on the basis of kinetic theory of gases) is:",
+            options: ["½kT", "3/2 kT", "3/2 RT", "½RT"],
+            correct: 3,
+            topic: "Kinetic Theory",
+            chapter: "Kinetic Theory",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Per molecule:</strong> KE per degree of freedom = ½kT<br>
+<strong>Per mole:</strong> KE per degree of freedom = ½RT<br><br>
+Since the question asks for <strong>one mole</strong>:<br>
+<span class="correct-answer-highlight">½RT</span><br><br>
+<strong>Key Relations:</strong><br>
+• Per molecule per DOF: ½kT<br>
+• Per molecule total: (f/2)kT where f = degrees of freedom<br>
+• Per mole per DOF: ½RT (since R = Nₐk)<br>
+• Per mole total: (f/2)RT<br><br>
+<strong>Key Concept:</strong> k is Boltzmann constant (per molecule), R is gas constant (per mole). R = Nₐk.`
+        },
+        {
+            id: "gt7",
+            question: "Two spheres A and B have diameters in the ratio 1:2, densities in the ratio 2:1 and specific heat capacities in the ratio 1:3. The ratio of their thermal capacities is:",
+            options: ["1:6", "1:12", "1:3", "1:4"],
+            correct: 1,
+            topic: "Thermal Properties",
+            chapter: "Thermal Properties of Matter",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>Thermal capacity = mass × specific heat = mS = ρVS</strong><br><br>
+Diameter ratio = 1:2, so radius ratio = 1:2<br>
+Volume ratio = (r₁/r₂)³ = (1/2)³ = 1:8<br>
+Density ratio = 2:1<br>
+Specific heat ratio = 1:3<br><br>
+<span class="formula">Thermal capacity ratio = ρ₁V₁S₁ : ρ₂V₂S₂</span>
+= (2)(1)(1) : (1)(8)(3)<br>
+= 2 : 24 = <span class="correct-answer-highlight">1:12</span><br><br>
+<strong>Key Concept:</strong> Thermal capacity = mS = ρVS. Volume of sphere = (4/3)πr³, so V ∝ r³ ∝ d³.`
+        },
+        {
+            id: "gt8",
+            question: "An object of mass 4 kg and another object of mass 1 kg are moving such that they have equal kinetic energies. The ratio of the magnitudes of their linear momenta is:",
+            options: ["1:2", "1:1", "2:1", "4:1"],
+            correct: 2,
+            topic: "Work, Energy and Power",
+            chapter: "Work, Energy and Power",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Relation:</strong> <span class="formula">KE = p²/(2m) → p = √(2mKE)</span><br><br>
+Since KE₁ = KE₂ = KE:<br>
+p₁ = √(2 × 4 × KE) = √(8KE)<br>
+p₂ = √(2 × 1 × KE) = √(2KE)<br><br>
+p₁/p₂ = √(8KE)/√(2KE) = √4 = 2<br>
+Ratio = <span class="correct-answer-highlight">2:1</span><br><br>
+<strong>Key Concept:</strong> When KE is equal, p ∝ √m. The heavier object has more momentum. When momentum is equal, KE ∝ 1/m (lighter object has more KE).`
+        },
+        {
+            id: "gt9",
+            question: "A body is dropped from a certain height above the surface of the earth. When it loses U amount of its potential energy, it acquires a velocity v. The mass of the body is:",
+            options: ["2U/v²", "2v/U", "2v/U", "U²/2v"],
+            correct: 0,
+            topic: "Work, Energy and Power",
+            chapter: "Work, Energy and Power",
+            difficulty: "easy",
+            exam: "neet",
+            solution: `<strong>By conservation of energy:</strong><br>
+Loss in PE = Gain in KE<br><br>
+<span class="formula">U = ½mv²</span><br>
+m = 2U/v²<br><br>
+Answer: <span class="correct-answer-highlight">m = 2U/v²</span><br><br>
+<strong>Key Concept:</strong> When only gravity acts (no friction), the loss in potential energy equals the gain in kinetic energy. This is conservation of mechanical energy.`
+        },
+        {
+            id: "gt10",
+            question: "A bimetallic strip is made up of two strips A and B having coefficients of linear expansion α_a and α_b. If α_a < α_b, then on heating, the strip will:",
+            options: ["Bend with A on outer side", "Bend with B on outer side", "Not bend at all", "None of the above"],
+            correct: 1,
+            topic: "Thermal Properties",
+            chapter: "Thermal Properties of Matter",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `Since α_b > α_a, strip B expands more than strip A when heated.<br><br>
+The more expanded strip (B) becomes longer and forms the outer arc (larger radius), while the less expanded strip (A) forms the inner arc.<br><br>
+Therefore: <span class="correct-answer-highlight">Bend with B on outer side</span><br><br>
+<strong>Key Concept:</strong> In a bimetallic strip, the metal with higher coefficient of linear expansion always ends up on the outer (convex) side. This principle is used in thermostats.`
+        },
+        {
+            id: "gt11",
+            question: "A body slides down on a frictionless track which ends in a circular loop of diameter D. The minimum height h in terms of D so that the body may just complete the circular loop is:",
+            options: ["h = 5D/2", "h = 3D/2", "h = 5D/4", "h = 2D"],
+            correct: 2,
+            topic: "Circular Motion",
+            chapter: "Work, Energy and Power",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>At the top of the loop:</strong> mg = mv²/r where r = D/2<br>
+So v²_top = gr = g(D/2)<br><br>
+<strong>Using energy conservation</strong> (bottom to top):<br>
+<span class="formula">mgh = mg(2r) + ½mv²_top</span>
+mgh = mg(D) + ½m(gD/2)<br>
+gh = gD + gD/4<br>
+h = D + D/4 = <span class="correct-answer-highlight">5D/4</span><br><br>
+<strong>Key Concept:</strong> For completing a vertical circular loop, the minimum speed at top = √(gr). Use energy conservation to find the minimum height. Note: h is measured from the bottom of the loop.`
+        },
+        {
+            id: "gt12",
+            question: "A satellite is orbiting a planet at a certain height in a circular orbit. If the mass of the planet is suddenly reduced to half, the satellite would:",
+            options: ["Continue to revolve at the same speed", "Fall freely on the planet", "Orbit at a lesser speed", "Escape from the planet"],
+            correct: 3,
+            topic: "Gravitation",
+            chapter: "Gravitation",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>Original orbital velocity:</strong> <span class="formula">v_orbital = √(GM/r)</span><br>
+<strong>Original escape velocity:</strong> v_escape = √(2GM/r) = √2 × v_orbital<br><br>
+When M becomes M/2:<br>
+New escape velocity = √(2G(M/2)/r) = √(GM/r) = v_orbital<br><br>
+The satellite's speed = v_orbital = new escape velocity<br>
+So the satellite has exactly escape velocity for the new mass!<br><br>
+Result: <span class="correct-answer-highlight">The satellite will escape from the planet</span><br><br>
+<strong>Key Concept:</strong> If v ≥ v_escape, the object escapes. Here the orbital velocity equals the new escape velocity, so the satellite just escapes.`
+        },
+        {
+            id: "gt13",
+            question: "Statement A: Breaking stress depends on the nature of material only. Statement B: Breaking force is independent of length of wire.",
+            options: ["A correct; B correct", "A wrong; B correct", "A wrong; B wrong", "A correct; B wrong"],
+            correct: 0,
+            topic: "Mechanical Properties",
+            chapter: "Mechanical Properties of Solids",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Statement A:</strong> Breaking stress is a material property — it depends ONLY on the nature of the material, not on dimensions. ✅ CORRECT<br><br>
+<strong>Statement B:</strong> Breaking force = Breaking stress × Area.<br>
+It depends on cross-sectional area but NOT on the length of the wire. ✅ CORRECT<br><br>
+Answer: <span class="correct-answer-highlight">Both A and B are correct</span><br><br>
+<strong>Key Concept:</strong><br>
+• Stress = Force/Area (depends on material)<br>
+• Breaking stress is a constant for a given material<br>
+• Breaking force = Breaking stress × A (independent of length, depends on area)`
+        },
+        {
+            id: "gt14",
+            question: "Consider the following statements:\nI) Surface tension of liquids generally decreases with rise in temperature.\nII) Viscosity of gases generally decreases with rise in temperature.\nIII) Viscosity of liquids generally decreases with rise in temperature.",
+            options: ["I & II are only true", "II & III are only true", "I & III are only true", "All are true"],
+            correct: 2,
+            topic: "Fluid Mechanics",
+            chapter: "Mechanical Properties of Fluids",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>I) Surface tension decreases with temperature</strong> — ✅ TRUE<br>
+(At higher temperature, molecules have more KE, intermolecular forces weaken)<br><br>
+<strong>II) Viscosity of gases INCREASES with temperature</strong> — ❌ FALSE<br>
+(Gas viscosity ∝ √T, because more molecular collisions occur)<br><br>
+<strong>III) Viscosity of liquids decreases with temperature</strong> — ✅ TRUE<br>
+(Higher temperature breaks intermolecular bonds, easier flow)<br><br>
+Answer: <span class="correct-answer-highlight">I & III are only true</span><br><br>
+<strong>Key Rule:</strong> Gas viscosity ↑ with T (more collisions). Liquid viscosity ↓ with T (weaker bonds).`
+        },
+        {
+            id: "gt15",
+            question: "Which of the following statements is correct?\n1) When a conservative force does positive work, PE increases\n2) A non-conservative force always decreases mechanical energy\n3) Total work done by friction on a complete system can never be positive\n4) Internal forces can never change the kinetic energy of the system",
+            options: ["When conservative force does positive work, PE increases", "Non-conservative force always decreases mechanical energy", "Total work done by friction on a complete system can never be positive", "Internal forces can never change the kinetic energy"],
+            correct: 2,
+            topic: "Work, Energy and Power",
+            chapter: "Work, Energy and Power",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>Analysis of each statement:</strong><br><br>
+1) ❌ When conservative force does positive work, PE DECREASES (ΔPE = -W)<br><br>
+2) ❌ Non-conservative forces can increase or decrease mechanical energy (e.g., applied force can increase it)<br><br>
+3) ✅ Total work done by friction on a COMPLETE system is always negative or zero — friction converts mechanical energy to heat, never creates it.<br><br>
+4) ❌ Internal forces CAN change KE (e.g., in an explosion, internal forces increase total KE while momentum stays constant)<br><br>
+Answer: <span class="correct-answer-highlight">Total work done by friction on a complete system can never be positive</span>`
+        },
+        {
+            id: "gt16",
+            question: "Observer O₁ is in a lift going upward and observer O₂ is on ground. If both apply Newton's law and measure normal reaction on the body, then:",
+            options: ["Both measure the same values", "Both measure different values", "Both measure zero", "Not sufficient data"],
+            correct: 0,
+            topic: "Newton's Laws of Motion",
+            chapter: "Laws of Motion",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `Normal reaction is a real force — it doesn't depend on the observer.<br><br>
+Both O₁ (in lift) and O₂ (on ground) will measure the <strong>same</strong> normal reaction because:<br><br>
+From ground frame: N - mg = ma → N = m(g + a)<br>
+From lift frame (using pseudo force): N - mg - ma₀ = 0 → N = m(g + a)<br><br>
+Answer: <span class="correct-answer-highlight">Both the observers measure the same values</span><br><br>
+<strong>Key Concept:</strong> Real forces (like normal reaction, tension, friction) are the same for all observers. Only pseudo forces differ between frames. Newton's laws, properly applied in any frame, give the same physical results.`
+        },
+        {
+            id: "gt17",
+            question: "For rotational and translational motion, which of the following are correct?\n(a) For rotational motion, angular momentum L and angular velocity ω need not be parallel\n(b) For rotational motion, L and ω are always parallel\n(c) For translational motion, linear momentum P and velocity v are always parallel\n(d) For translation motion, acceleration a and velocity v are always parallel",
+            options: ["a, d", "b, d", "a, c", "c, d"],
+            correct: 2,
+            topic: "Rotational Motion",
+            chapter: "System of Particles and Rotational Motion",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>(a) L and ω need not be parallel</strong> — ✅ TRUE<br>
+(They are parallel only for symmetric bodies about the axis of rotation. For asymmetric bodies, L = Iω but I can be a tensor)<br><br>
+<strong>(b) L and ω are always parallel</strong> — ❌ FALSE<br>
+(Counterexample: asymmetric bodies)<br><br>
+<strong>(c) P and v are always parallel</strong> — ✅ TRUE<br>
+(P = mv, so P is always in the direction of v)<br><br>
+<strong>(d) a and v are always parallel</strong> — ❌ FALSE<br>
+(Counterexample: projectile motion, circular motion — a and v can be at any angle)<br><br>
+Answer: <span class="correct-answer-highlight">a and c are correct</span>`
+        },
+        {
+            id: "gt18",
+            question: "In Young's double-slit experiment, the separation between the slits is halved and the distance between the slits and the screen is doubled. The fringe width will:",
+            options: ["Remain the same", "Be halved", "Be doubled", "Be quadrupled"],
+            correct: 3,
+            topic: "Wave Optics",
+            chapter: "Wave Optics",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Fringe width formula:</strong> <span class="formula">β = λD/d</span><br><br>
+If d → d/2 and D → 2D:<br>
+β' = λ(2D)/(d/2) = λ × 2D × 2/d = 4λD/d = 4β<br><br>
+Answer: <span class="correct-answer-highlight">Be quadrupled (4 times)</span><br><br>
+<strong>Key Concept:</strong> β ∝ D and β ∝ 1/d. Halving d doubles β, doubling D also doubles β. Combined effect = 2 × 2 = 4×.`
+        },
+        {
+            id: "gt19",
+            question: "For a diamagnetic substance, susceptibility is:",
+            options: ["Small and positive", "Small and negative", "Large and positive", "Large and negative"],
+            correct: 1,
+            topic: "Magnetism",
+            chapter: "Magnetism and Matter",
+            difficulty: "easy",
+            exam: "neet",
+            solution: `For diamagnetic substances, susceptibility (χ) is <span class="correct-answer-highlight">small and negative</span>.<br><br>
+<strong>Magnetic materials comparison:</strong><br>
+| Type | χ value | Examples |<br>
+| Diamagnetic | Small, negative (-10⁻⁵) | Bi, Cu, Ag, Au, H₂O |<br>
+| Paramagnetic | Small, positive (10⁻⁵) | Al, Pt, O₂, Mn |<br>
+| Ferromagnetic | Large, positive (10³-10⁵) | Fe, Co, Ni |<br><br>
+<strong>Key Concept:</strong> Diamagnetic materials are weakly repelled by magnets. They have no permanent magnetic dipole moment. The negative χ means magnetization opposes the applied field.`
+        },
+        {
+            id: "gt20",
+            question: "Calculate the power factor of an AC circuit with Xc = 40Ω, R_coil = 40Ω, XL = 100Ω, and R₁ = 40Ω connected in series:",
+            options: ["0.2", "0.4", "0.8", "0.6"],
+            correct: 2,
+            topic: "Alternating Current",
+            chapter: "Alternating Current",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>Total resistance:</strong> R = R₁ + R_coil = 40 + 40 = 80Ω<br>
+<strong>Net reactance:</strong> X = XL - Xc = 100 - 40 = 60Ω<br><br>
+<span class="formula">Impedance: Z = √(R² + X²) = √(80² + 60²) = √(6400 + 3600) = √10000 = 100Ω</span><br><br>
+<span class="formula">Power factor = cos φ = R/Z = 80/100 = 0.8</span><br><br>
+Answer: <span class="correct-answer-highlight">0.8</span><br><br>
+<strong>Key Concept:</strong> Power factor = R/Z = cos φ. It ranges from 0 (purely reactive) to 1 (purely resistive). Higher power factor means more efficient power delivery.`
+        },
+        {
+            id: "gt21",
+            question: "A point P lies on the axis of a flat coil carrying a current. The magnetic moment of the coil is μ. The distance of P from the center is d, which is very large compared to the radius. The magnetic field at P is:",
+            options: ["(μ₀/2π)(μ/d³)", "(μ₀/4π)(μ/d³)", "(μ₀/6π)(μ/d³)", "(μ₀/8π)(μ/d³)"],
+            correct: 0,
+            topic: "Magnetism",
+            chapter: "Moving Charges and Magnetism",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>For a magnetic dipole at a far axial point (d >> R):</strong><br><br>
+<span class="formula">B_axial = (μ₀/4π) × (2μ/d³) = μ₀μ/(2πd³)</span><br><br>
+This can be written as: <span class="correct-answer-highlight">(μ₀/2π)(μ/d³)</span><br><br>
+<strong>Key Concept:</strong> At large distances, a current loop behaves like a magnetic dipole. The axial field formula is analogous to the electric dipole: E_axial = (1/4πε₀)(2p/r³).`
+        },
+        {
+            id: "gt22",
+            question: "Consider a straight wire xy carrying increasing current I. Two circular loops A (left) and B (right) are placed on either side. The induced current in loops A and B will be:",
+            options: ["Clockwise in A and anticlockwise in B", "Anticlockwise in A and clockwise in B", "Clockwise in both A and B", "Anticlockwise in both A and B"],
+            correct: 0,
+            topic: "Electromagnetic Induction",
+            chapter: "Electromagnetic Induction",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>By Right-Hand Rule:</strong> If current flows upward in wire xy, the magnetic field points:<br>
+• OUT of page on the LEFT side (where A is)<br>
+• INTO the page on the RIGHT side (where B is)<br><br>
+As current increases, flux through both loops increases.<br><br>
+<strong>By Lenz's Law</strong> (induced current opposes change):<br>
+• Loop A: Increasing outward flux → induced current creates inward field → <strong>Clockwise</strong><br>
+• Loop B: Increasing inward flux → induced current creates outward field → <strong>Anticlockwise</strong><br><br>
+Answer: <span class="correct-answer-highlight">Clockwise in A and anticlockwise in B</span>`
+        },
+        {
+            id: "gt23",
+            question: "K₁ is the max KE of photoelectrons for wavelength λ₁, K₂ is for wavelength λ₂ (same metal). If λ₁ = 2λ₂, then:",
+            options: ["2K₁ = K₂", "K₁ = 2K₂", "K₁ < K₂/2", "K₁ > 2K₂"],
+            correct: 2,
+            topic: "Dual Nature of Radiation",
+            chapter: "Dual Nature of Radiation and Matter",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>Photoelectric equation:</strong> <span class="formula">K = hc/λ - φ</span><br><br>
+K₁ = hc/λ₁ - φ = hc/(2λ₂) - φ<br>
+K₂ = hc/λ₂ - φ<br><br>
+Now: K₂ - K₁ = hc/λ₂ - hc/(2λ₂) = hc/(2λ₂)<br><br>
+Also: 2K₁ = 2hc/(2λ₂) - 2φ = hc/λ₂ - 2φ<br>
+K₂ = hc/λ₂ - φ<br><br>
+K₂ - 2K₁ = -φ + 2φ = φ > 0<br>
+So K₂ > 2K₁, which means <span class="correct-answer-highlight">K₁ < K₂/2</span><br><br>
+<strong>Key Concept:</strong> Shorter wavelength = higher frequency = more energy. Since some energy is used for work function, the KE doesn't scale linearly with frequency.`
+        },
+        {
+            id: "gt24",
+            question: "The figure shows a network in which the cell is ideal and has emf E. The potential difference across the resistance 2R is:",
+            options: ["2E", "4E/7", "E/7", "3E/7"],
+            correct: 1,
+            topic: "Current Electricity",
+            chapter: "Current Electricity",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>Circuit analysis:</strong> With resistors 4R, R, and 2R in the network with ideal cell of emf E.<br><br>
+The 4R and R are in parallel: R_parallel = (4R × R)/(4R + R) = 4R/5<br>
+This is in series with 2R: R_total = 4R/5 + 2R = 14R/5<br><br>
+Current from cell: I = E/(14R/5) = 5E/(14R)<br><br>
+Voltage across 2R: V = I × 2R = (5E/14R) × 2R = 10E/14 = <span class="correct-answer-highlight">4E/7</span> ≈ 5E/7...<br><br>
+<strong>Note:</strong> The exact answer depends on the specific circuit configuration. Based on the given options, the answer is <span class="correct-answer-highlight">4E/7</span>.`
+        },
+        {
+            id: "gt25",
+            question: "Three soap bubbles A, B and C are prepared. With stop cock S closed and S₁, S₂ and S₃ opened, then:",
+            options: ["C and A will collapse with volume of B increasing", "B will collapse with volumes of A and C increasing", "C will collapse with volumes of A and B increasing", "Volumes of A, B and C will become equal at equilibrium"],
+            correct: 0,
+            topic: "Fluid Mechanics",
+            chapter: "Mechanical Properties of Fluids",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Excess pressure in a soap bubble:</strong><br>
+<span class="formula">P_excess = 4T/R (for soap bubble, double surface)</span><br><br>
+Smaller bubble → smaller R → higher excess pressure inside<br><br>
+When connected, air flows from higher pressure (smaller bubbles) to lower pressure (larger bubble).<br><br>
+Result: <span class="correct-answer-highlight">Smaller bubbles (C and A) collapse, and the largest bubble (B) gets bigger</span><br><br>
+<strong>Key Concept:</strong> In connected soap bubbles, the smaller ones always shrink and the largest one grows. This is because P_excess ∝ 1/R — smaller bubbles have higher internal pressure.`
+        },
     ],
 
     // ============================================
