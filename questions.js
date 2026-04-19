@@ -1,4 +1,4 @@
-// ========================================
+/ ========/================================
 // PrepMaster — Question Bank
 // Real NEET & IIT JEE Questions with Solutions
 // ========================================
@@ -682,6 +682,151 @@ When connected, air flows from higher pressure (smaller bubbles) to lower pressu
 Result: <span class="correct-answer-highlight">Smaller bubbles (C and A) collapse, and the largest bubble (B) gets bigger</span><br><br>
 <strong>Key Concept:</strong> In connected soap bubbles, the smaller ones always shrink and the largest one grows. This is because P_excess ∝ 1/R — smaller bubbles have higher internal pressure.`
         },
+
+        // NEET Grand Test — Physics (Q31-45)
+        {
+            id: "gt26",
+            question: "AB and CD are two slabs with refractive indices μ = √2 and μ = √3. The medium between them has μ = 2. The minimum angle of incidence at Q for total internal reflection at both slabs is:",
+            options: ["60°", "30°", "45°", "15°"],
+            correct: 0,
+            topic: "Ray Optics",
+            chapter: "Ray Optics and Optical Instruments",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>For TIR at slab AB (μ=√2):</strong> sin θ_c1 = √2/2 = 1/√2 → θ_c1 = 45°<br><strong>For TIR at slab CD (μ=√3):</strong> sin θ_c2 = √3/2 → θ_c2 = 60°<br><br>The ray must undergo TIR at BOTH slabs. The more restrictive condition is the larger critical angle.<br><br>Minimum angle of incidence = <span class="correct-answer-highlight">60°</span><br><br><strong>Key Concept:</strong> For TIR, angle of incidence must exceed the critical angle. sin θ_c = μ_rarer/μ_denser.`
+        },
+        {
+            id: "gt27",
+            question: "The given logic gate circuit is equivalent to:",
+            options: ["AND gate", "OR gate", "NOT gate", "NAND gate"],
+            correct: 2,
+            topic: "Semiconductor Electronics",
+            chapter: "Semiconductor Electronics",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `The circuit shown uses a combination of gates that produces an output which is the complement of the input.<br><br>When input A = 0, output Y = 1<br>When input A = 1, output Y = 0<br><br>This is the truth table of a <span class="correct-answer-highlight">NOT gate (Inverter)</span>.<br><br><strong>Key Truth Tables:</strong><br>• NOT: Y = Ā<br>• AND: Y = A·B<br>• OR: Y = A+B<br>• NAND: Y = (A·B)' — universal gate`
+        },
+        {
+            id: "gt28",
+            question: "In Young's double slit experiment, the second minimum is observed exactly in front of one slit. The distance between the slits is d and the distance between the source and screen is D. The wavelength of light used is:",
+            options: ["d²/D", "d²/2D", "d²/3D", "d²/4D"],
+            correct: 2,
+            topic: "Wave Optics",
+            chapter: "Wave Optics",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>For double slit minima:</strong> d sin θ = (n - ½)λ<br>Second minimum: n = 2, so d sin θ = 3λ/2<br><br>Position of second minimum: y₂ = 3λD/(2d)<br><br>"In front of one slit" means y₂ = d/2<br><br><span class="formula">3λD/(2d) = d/2</span><br>3λD = d²<br>λ = <span class="correct-answer-highlight">d²/(3D)</span><br><br><strong>Key Concept:</strong> For dark fringes: yₙ = (n - ½)λD/d. Setting position = d/2 gives the wavelength.`
+        },
+        {
+            id: "gt29",
+            question: "A rectangular conducting loop carrying current i₁ is near a long straight wire carrying steady current i₂ (parallel to one side of loop, in the same plane). The loop will:",
+            options: ["Move away from the wire", "Move towards the wire", "Remain stationary", "Rotate about an axis parallel to the wire"],
+            correct: 1,
+            topic: "Magnetism",
+            chapter: "Moving Charges and Magnetism",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `The wire creates a non-uniform magnetic field around it (B ∝ 1/r).<br><br>The side of the loop closer to the wire experiences a <strong>stronger</strong> force than the far side.<br><br>If the currents in the nearest side are in the same direction → attractive force on near side > repulsive force on far side.<br><br>Net result: <span class="correct-answer-highlight">The loop moves towards the wire</span><br><br><strong>Key Concept:</strong> In a non-uniform field, a current loop experiences a net translational force. Parallel currents attract, and the closer side dominates.`
+        },
+        {
+            id: "gt30",
+            question: "If a piece of plane glass is placed on a word with letters of different colours, the colour of the letter which will appear to be least raised is:",
+            options: ["Red", "Green", "Yellow", "Violet"],
+            correct: 0,
+            topic: "Ray Optics",
+            chapter: "Ray Optics and Optical Instruments",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `When viewing through a glass slab, apparent shift = t(1 - 1/μ).<br><br>Since μ depends on wavelength (dispersion): μ_violet > μ_red<br><br>Red light has the <strong>smallest μ</strong> → smallest apparent shift → <span class="correct-answer-highlight">appears least raised</span><br><br>Violet light has the largest μ → appears most raised.<br><br><strong>Key Concept:</strong> Red light has the longest wavelength and least refraction. It bends least, so it appears least displaced/raised when viewed through glass.`
+        },
+        {
+            id: "gt31",
+            question: "Assertion(A): Current heats a wire red hot. Cold water on half makes the rest hotter.\nReason(R): Resistance decreases with temperature decrease, so current increases.",
+            options: ["Both A and R are correct and R is the correct explanation of A", "Both A and R are correct but R is not the correct explanation of A", "A is true and R is false", "A is false and R is true"],
+            correct: 0,
+            topic: "Current Electricity",
+            chapter: "Current Electricity",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>A is TRUE:</strong> When cold water cools half the wire, its resistance drops. In a series circuit, total resistance decreases → current increases → remaining hot part gets even hotter (P = I²R).<br><br><strong>R is TRUE and correctly explains A:</strong> The cooled portion has lower resistance → more current flows → more power dissipated in the uncooled portion.<br><br>Answer: <span class="correct-answer-highlight">Both A and R correct, R explains A</span>`
+        },
+        {
+            id: "gt32",
+            question: "In the nuclear reaction X²⁰⁰ → A¹¹⁰ + B⁸⁰ + 10n¹, if binding energy per nucleon for X, A and B are 7.4 MeV, 8.2 MeV and 8.1 MeV respectively, the energy released is:",
+            options: ["70 MeV", "200 MeV", "190 MeV", "10 MeV"],
+            correct: 0,
+            topic: "Nuclear Physics",
+            chapter: "Nuclei",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>Energy released = Total BE of products - Total BE of reactants</strong><br><br><span class="formula">E = (110×8.2 + 80×8.1 + 10×0) - (200×7.4)</span><br>= (902 + 648 + 0) - 1480<br>= 1550 - 1480<br>= <span class="correct-answer-highlight">70 MeV</span><br><br><strong>Key Concept:</strong> Neutrons have zero binding energy. Energy released = increase in total binding energy of the system.`
+        },
+        {
+            id: "gt33",
+            question: "What happens to the fringe pattern if in front of one slit a glass plate which absorbs 50% energy is introduced?",
+            options: ["Bright fringes become less bright, dark fringes become more dark", "No fringes are observed", "The fringe width decreases", "Bright fringes become less bright and dark fringes become less dark"],
+            correct: 3,
+            topic: "Wave Optics",
+            chapter: "Wave Optics",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `When a glass plate absorbs 50% energy from one slit, the amplitudes become unequal:<br>a₁ = a, a₂ = a/√2<br><br><strong>Effect on fringes:</strong><br>• I_max = (a₁ + a₂)² → decreases (bright fringes less bright)<br>• I_min = (a₁ - a₂)² → now > 0 (dark fringes are NOT completely dark anymore!)<br><br>Answer: <span class="correct-answer-highlight">Bright fringes less bright, dark fringes less dark</span><br><br><strong>Key Concept:</strong> Complete destructive interference requires equal amplitudes. With unequal amplitudes, minima are never zero — dark fringes become "less dark".`
+        },
+        {
+            id: "gt34",
+            question: "In which of the following systems will the radius of the first orbit be minimum?",
+            options: ["Hydrogen atom", "Deuterium atom", "Singly ionized helium", "Doubly ionized Lithium"],
+            correct: 3,
+            topic: "Atoms",
+            chapter: "Atoms",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Bohr radius formula:</strong> <span class="formula">rₙ = n²a₀/Z</span><br>For first orbit (n=1): r₁ = a₀/Z<br><br>• Hydrogen (Z=1): r = a₀<br>• Deuterium (Z=1): r = a₀ (same Z as H)<br>• He⁺ (Z=2): r = a₀/2<br>• Li²⁺ (Z=3): r = a₀/3 ← <strong>MINIMUM</strong><br><br>Answer: <span class="correct-answer-highlight">Doubly ionized Lithium (Li²⁺)</span><br><br><strong>Key Concept:</strong> r ∝ 1/Z. Higher atomic number = smaller orbit radius. Li²⁺ has Z=3, giving the smallest first orbit.`
+        },
+        {
+            id: "gt35",
+            question: "A tuning fork of 100 Hz produces 2 beats/s with an unknown fork. After loading the unknown fork, it produces 1 beat/s with 100 Hz. The frequency of the unknown fork is:",
+            options: ["102 Hz", "98 Hz", "99 Hz", "101 Hz"],
+            correct: 0,
+            topic: "Waves",
+            chapter: "Waves",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Initially:</strong> 2 beats/s with 100 Hz → f = 98 or 102 Hz<br><br><strong>After loading</strong> (frequency decreases):<br>If f = 102: after loading, f' < 102, could be 101 → 1 beat with 100 Hz ✅<br>If f = 98: after loading, f' < 98, say 97 → 3 beats with 100 Hz ✗<br><br>Answer: <span class="correct-answer-highlight">102 Hz</span><br><br><strong>Key Concept:</strong> Loading a tuning fork (adding wax/mass) always DECREASES its frequency. If beats decrease after loading, the original frequency was higher than the reference.`
+        },
+        {
+            id: "gt36",
+            question: "Assertion(A): KE of charged particle entering and exiting a magnetic field region is the same (10J).\nReason(R): Magnetic force does zero work on a charged particle.",
+            options: ["Both A and R correct, R explains A", "Both A and R correct, R doesn't explain A", "A is true, R is false", "A is false, R is true"],
+            correct: 0,
+            topic: "Magnetism",
+            chapter: "Moving Charges and Magnetism",
+            difficulty: "easy",
+            exam: "neet",
+            solution: `<strong>A is TRUE:</strong> KE at entry = KE at exit = 10J. Magnetic field doesn't change the speed/KE of a charged particle.<br><br><strong>R is TRUE:</strong> Magnetic force F = qv×B is always perpendicular to velocity, so work done = F·ds = 0.<br><br>R correctly explains A: Since magnetic force does zero work, kinetic energy remains unchanged.<br><br>Answer: <span class="correct-answer-highlight">Both A and R correct, R explains A</span><br><br><strong>Key Concept:</strong> Magnetic force changes direction of velocity, not its magnitude. Work = Fcos θ × d = 0 (since θ = 90°).`
+        },
+        {
+            id: "gt37",
+            question: "If A⃗ = 4î − 3ĵ and B⃗ = 6î + 8ĵ, then magnitude and direction of A⃗ + B⃗ will be:",
+            options: ["5, tan⁻¹(3/4)", "5√5, tan⁻¹(1/2)", "10, tan⁻¹(5)", "25, tan⁻¹(3/4)"],
+            correct: 1,
+            topic: "Vectors",
+            chapter: "Motion in a Plane",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>A⃗ + B⃗</strong> = (4+6)î + (-3+8)ĵ = 10î + 5ĵ<br><br><span class="formula">|A⃗ + B⃗| = √(10² + 5²) = √(100 + 25) = √125 = 5√5</span><br><br>Direction: tan θ = 5/10 = 1/2<br>θ = <span class="correct-answer-highlight">tan⁻¹(1/2)</span><br><br>Answer: <span class="correct-answer-highlight">5√5, tan⁻¹(1/2)</span><br><br><strong>Key Concept:</strong> For vector addition, add components separately. Magnitude = √(Rx² + Ry²), angle = tan⁻¹(Ry/Rx).`
+        },
+        {
+            id: "gt38",
+            question: "In a hydraulic press, radii of connecting pipes r₁ and r₂ are in the ratio 1:2. To lift a heavy mass M on the larger piston, the minimum force 'f' on the small piston equals:",
+            options: ["Mg", "Mg/2", "Mg/4", "Mg/8"],
+            correct: 2,
+            topic: "Fluid Mechanics",
+            chapter: "Mechanical Properties of Fluids",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Pascal's Law:</strong> <span class="formula">F₁/A₁ = F₂/A₂</span><br><br>f/(πr₁²) = Mg/(πr₂²)<br>f = Mg × (r₁/r₂)²<br>f = Mg × (1/2)²<br>f = <span class="correct-answer-highlight">Mg/4</span><br><br><strong>Key Concept:</strong> In a hydraulic press, force is amplified by the ratio of areas. Since A = πr², and r₁:r₂ = 1:2, the area ratio = 1:4. So a force of Mg/4 on the small piston lifts Mg on the large piston.`
+        },
     ],
 
     // ============================================
@@ -902,6 +1047,208 @@ Fe²⁺ = <span class="correct-answer-highlight">[Ar] 3d⁶</span><br><br>
 HCl → H⁺ + Cl⁻ (donates proton → acid)<br>
 NaOH → Na⁺ + OH⁻ (OH⁻ accepts proton → base)<br><br>
 <strong>Note:</strong> H₂O is amphoteric — it can act as both acid and base depending on the reaction, but by itself it's not classified as just an acid.`
+        },
+
+        // ============================================
+        // NEET GRAND TEST (SERIES-1) — Chemistry
+        // ============================================
+        {
+            id: "gc1",
+            question: "Pair of elements with the following atomic numbers have the same chemical properties:",
+            options: ["13 & 21", "3 & 14", "4 & 24", "15 & 51"],
+            correct: 3,
+            topic: "Periodic Table",
+            chapter: "Classification of Elements and Periodicity",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `Elements with same chemical properties belong to the <strong>same group</strong>.<br><br>Z=15 → Phosphorus (Group 15)<br>Z=51 → Antimony (Group 15)<br><br>Both are in <span class="correct-answer-highlight">Group 15</span>, so they have similar chemical properties!<br><br>Other options: 13(Al, Gr.13) & 21(Sc, Gr.3) ✗ | 3(Li, Gr.1) & 14(Si, Gr.14) ✗ | 4(Be, Gr.2) & 24(Cr, Gr.6) ✗`
+        },
+        {
+            id: "gc2",
+            question: "Identify the incorrect set in the following:",
+            options: ["Decreasing order of masses: n > p > e⁻", "Decreasing order of e/m values: p > e⁻ > n", "Decreasing order of de-Broglie wavelength: e⁻ > p > α", "Decreasing order of uncertainty in velocity when Δx is same: e⁻ > p > n"],
+            correct: 1,
+            topic: "Atomic Structure",
+            chapter: "Structure of Atom",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>Checking each:</strong><br><br>1) Masses: n(1.675×10⁻²⁷) > p(1.672×10⁻²⁷) > e⁻(9.1×10⁻³¹) ✅ CORRECT<br><br>2) e/m values: e⁻ has HIGHEST e/m (1.76×10¹¹), not proton! ❌ <strong>INCORRECT</strong><br>Correct order: e⁻ >> p > n(0)<br><br>3) de-Broglie λ = h/mv, lighter particle → longer λ ✅<br>4) Δv = h/(4πmΔx), lighter → more uncertainty ✅<br><br>Answer: <span class="correct-answer-highlight">Option 2 is incorrect</span> — e/m of electron is the highest, not proton's.`
+        },
+        {
+            id: "gc3",
+            question: "Which orbital is NOT polycentric (multi-centered)?",
+            options: ["2s", "σ 2s", "σ₂*", "π 2pₓ"],
+            correct: 0,
+            topic: "Chemical Bonding",
+            chapter: "Chemical Bonding and Molecular Structure",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Polycentric</strong> = spread over multiple nuclei = molecular orbital<br><br>• <span class="correct-answer-highlight">2s</span> → atomic orbital (single atom) → NOT polycentric ✅<br>• σ 2s → bonding MO (two nuclei) → polycentric<br>• σ₂* → antibonding MO (two nuclei) → polycentric<br>• π 2pₓ → bonding MO (two nuclei) → polycentric<br><br><strong>Key Concept:</strong> Atomic orbitals (1s, 2s, 2p, etc.) are monocentric. Molecular orbitals (σ, σ*, π, π*) are polycentric as they extend over two or more atoms.`
+        },
+        {
+            id: "gc4",
+            question: "The molar mass of hydrogen (H₂) is:",
+            options: ["1.008 g", "2.016 g", "6.02 × 10²³ g", "2.016 amu"],
+            correct: 1,
+            topic: "Mole Concept",
+            chapter: "Some Basic Concepts of Chemistry",
+            difficulty: "easy",
+            exam: "neet",
+            solution: `Hydrogen exists as H₂ (diatomic molecule).<br><br>Atomic mass of H = 1.008 amu<br><span class="formula">Molar mass of H₂ = 2 × 1.008 = 2.016 g/mol</span><br><br>Answer: <span class="correct-answer-highlight">2.016 g</span><br><br><strong>Key Point:</strong> Molar mass is expressed in g/mol. 2.016 amu would be the molecular mass, not molar mass.`
+        },
+        {
+            id: "gc5",
+            question: "Statement I: IUPAC name of Aceto nitrile is methane nitrile.\nStatement II: n-butane and Isobutane are distinguished by potassium permanganate.",
+            options: ["Both statements are correct", "Statement I is correct, Statement II is incorrect", "Both statements are incorrect", "Statement I is incorrect, Statement II is correct"],
+            correct: 1,
+            topic: "Organic Chemistry",
+            chapter: "Organic Chemistry: Basic Principles",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Statement I:</strong> CH₃CN = Aceto nitrile = Methane nitrile (IUPAC) ✅ TRUE<br><br><strong>Statement II:</strong> n-butane and isobutane are both saturated alkanes. KMnO₄ doesn't easily distinguish between isomeric alkanes. ❌ FALSE<br><br>Answer: <span class="correct-answer-highlight">Statement I correct, Statement II incorrect</span>`
+        },
+        {
+            id: "gc6",
+            question: "In the titration of Cu²⁺ with I⁻, indicator is starch solution. The colour at the end point is:",
+            options: ["Pale pink colour", "Blue colour disappears", "Pink colour disappears", "Deep blue colour"],
+            correct: 1,
+            topic: "Redox Reactions",
+            chapter: "Redox Reactions",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `In iodometric titration: Cu²⁺ + I⁻ → CuI + I₂<br>I₂ + starch → Blue colour<br><br>I₂ is then titrated with Na₂S₂O₃:<br>I₂ + 2Na₂S₂O₃ → Na₂S₄O₆ + 2NaI<br><br>At the end point, all I₂ is consumed → <span class="correct-answer-highlight">Blue colour disappears</span><br><br><strong>Key Concept:</strong> Starch-iodine complex is deep blue. End point of iodometric titration is the disappearance of blue color.`
+        },
+        {
+            id: "gc7",
+            question: "Kc value of a gaseous reaction is 5 mol/lit. If pressure is increased, then:",
+            options: ["Forward reaction is favoured", "Backward reaction is favoured", "Reaction is unaffected", "Kc value increases"],
+            correct: 1,
+            topic: "Chemical Equilibrium",
+            chapter: "Equilibrium",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `Kc has units of mol/L, meaning Δn ≠ 0 (products have more gaseous moles).<br><br>Since Kc = [Products]/[Reactants] has units mol/L → more product moles than reactant moles.<br><br>Increasing pressure → equilibrium shifts to side with fewer moles → <span class="correct-answer-highlight">Backward reaction is favoured</span><br><br><strong>Key Concept:</strong> Kc doesn't change with pressure (only temperature). But equilibrium POSITION shifts. Pressure increase favours the side with fewer gas moles.`
+        },
+        {
+            id: "gc8",
+            question: "A salt of weak acid and weak base undergoes:",
+            options: ["Only cationic hydrolysis", "Only anionic hydrolysis", "Both cationic and anionic hydrolysis", "No hydrolysis"],
+            correct: 2,
+            topic: "Ionic Equilibrium",
+            chapter: "Equilibrium",
+            difficulty: "easy",
+            exam: "neet",
+            solution: `A salt of weak acid + weak base: Both ions hydrolyze!<br><br>• Cation (from weak base) → undergoes cationic hydrolysis<br>• Anion (from weak acid) → undergoes anionic hydrolysis<br><br>Answer: <span class="correct-answer-highlight">Both cationic and anionic hydrolysis</span><br><br>pH of solution depends on relative strengths: pH = 7 + ½(pKa - pKb)<br>• If Ka > Kb → acidic<br>• If Ka < Kb → basic<br>• If Ka = Kb → neutral`
+        },
+        {
+            id: "gc9",
+            question: "Out of Ca²⁺, Al³⁺, Cu²⁺, Fe³⁺, Mg²⁺ and Zn²⁺, the reagents NH₄Cl and aqueous NH₃ will precipitate:",
+            options: ["Ca²⁺, Al³⁺", "Al³⁺, Fe³⁺", "Cu²⁺, Mg²⁺", "Mg²⁺, Zn²⁺"],
+            correct: 1,
+            topic: "Qualitative Analysis",
+            chapter: "d and f Block Elements",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `NH₄Cl + NH₃ provides a buffer solution (pH ≈ 9).<br><br>• Al(OH)₃ → precipitates (insoluble, doesn't form complex with NH₃) ✅<br>• Fe(OH)₃ → precipitates (insoluble, Ksp very low) ✅<br>• Cu²⁺ → forms soluble [Cu(NH₃)₄]²⁺ complex ✗<br>• Zn²⁺ → forms soluble [Zn(NH₃)₄]²⁺ complex ✗<br>• Ca²⁺, Mg²⁺ → don't precipitate at pH 9 ✗<br><br>Answer: <span class="correct-answer-highlight">Al³⁺ and Fe³⁺</span> precipitate as hydroxides.`
+        },
+        {
+            id: "gc10",
+            question: "Assertion (A): CCl₄ does not undergo hydrolysis, whereas SiCl₄ is readily hydrolysed.\nReason (R): Carbon has no d-orbitals but silicon has vacant d-orbitals.",
+            options: ["Both correct, R explains A", "Both correct, R doesn't explain A", "A is false, R is true", "A is true, R is false"],
+            correct: 0,
+            topic: "Chemical Bonding",
+            chapter: "The p-Block Elements",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>A is TRUE:</strong> CCl₄ is resistant to hydrolysis, SiCl₄ hydrolyzes readily.<br><br><strong>R is TRUE and explains A:</strong> Silicon has vacant 3d orbitals that can accept lone pairs from water molecules (nucleophilic attack), enabling hydrolysis. Carbon lacks d-orbitals, so H₂O cannot attack CCl₄.<br><br>Answer: <span class="correct-answer-highlight">Both A and R correct, R explains A</span>`
+        },
+        {
+            id: "gc11",
+            question: "Which of the following can exist?",
+            options: ["BF₆³⁻", "CF₆²⁻", "SiF₆²⁻", "SiCl₆⁻"],
+            correct: 2,
+            topic: "Chemical Bonding",
+            chapter: "The p-Block Elements",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `• BF₆³⁻ → B has no d-orbitals, max 4 bonds → Cannot exist ✗<br>• CF₆²⁻ → C has no d-orbitals, max 4 bonds → Cannot exist ✗<br>• <span class="correct-answer-highlight">SiF₆²⁻</span> → Si has vacant 3d orbitals, can form 6 bonds (sp³d² hybridization) → EXISTS ✅<br>• SiCl₆⁻ → Charge doesn't balance correctly ✗<br><br><strong>Key Concept:</strong> Elements in Period 2 (B, C, N) cannot expand their octet due to absence of d-orbitals. Period 3+ elements (Si, P, S) can form more than 4 bonds using d-orbitals.`
+        },
+        {
+            id: "gc12",
+            question: "In Kjeldahl's method, nitrogen present in organic compound is first converted into:",
+            options: ["NH₃", "(NH₄)₂SO₄", "N₂", "NO"],
+            correct: 1,
+            topic: "Organic Chemistry",
+            chapter: "Organic Chemistry: Basic Principles",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `In Kjeldahl's method:<br><br><strong>Step 1 (Digestion):</strong> Organic compound + conc. H₂SO₄ → N is converted to <span class="correct-answer-highlight">(NH₄)₂SO₄</span><br><br><strong>Step 2 (Distillation):</strong> (NH₄)₂SO₄ + NaOH → NH₃ (gas released)<br><br><strong>Step 3 (Absorption):</strong> NH₃ absorbed in known excess HCl or H₂SO₄<br><br><strong>Step 4 (Titration):</strong> Back titrate remaining acid with NaOH<br><br><strong>Key Concept:</strong> Kjeldahl's method works for N in amines, amides, etc. It doesn't work for N in nitro groups, azo groups, or ring nitrogen.`
+        },
+        {
+            id: "gc13",
+            question: "Hyperconjugation is NOT present in:",
+            options: ["CH₃−CH=CH₂", "CH₂=CH₂", "C₆H₅−CH₃", "(CH₃)₂C=CH₂"],
+            correct: 1,
+            topic: "Organic Chemistry",
+            chapter: "Organic Chemistry: Basic Principles",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `Hyperconjugation requires α-hydrogen (H on sp³ C adjacent to sp² C).<br><br>• CH₃−CH=CH₂ → has 3 α-H on CH₃ ✓<br>• <span class="correct-answer-highlight">CH₂=CH₂</span> → NO α-hydrogen! Both carbons are sp²; H's are directly on double-bonded C → ✗<br>• C₆H₅−CH₃ → 3 α-H on CH₃ adjacent to ring ✓<br>• (CH₃)₂C=CH₂ → 6 α-H on two CH₃ groups ✓<br><br><strong>Key Concept:</strong> Hyperconjugation = "no bond resonance". Requires C−H bond on a carbon adjacent to an sp² carbon (double bond or carbocation).`
+        },
+        {
+            id: "gc14",
+            question: "Solutions: A = 0.1M Glucose, B = 0.05M NaCl, C = 0.05M BaCl₂, D = 0.1M AlF₃. Which pair is isotonic?",
+            options: ["A & C", "B & C", "A & B", "A & D"],
+            correct: 2,
+            topic: "Solutions",
+            chapter: "Solutions",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `<strong>Isotonic = same osmotic pressure = same total particle concentration (i × C)</strong><br><br>• A: Glucose (non-electrolyte): i=1 → 1 × 0.1 = 0.1 M<br>• B: NaCl → Na⁺ + Cl⁻: i=2 → 2 × 0.05 = 0.1 M<br>• C: BaCl₂ → Ba²⁺ + 2Cl⁻: i=3 → 3 × 0.05 = 0.15 M<br>• D: AlF₃ → Al³⁺ + 3F⁻: i=4 → 4 × 0.1 = 0.4 M<br><br>A and B both give 0.1 M particles → <span class="correct-answer-highlight">A & B are isotonic</span>`
+        },
+        {
+            id: "gc15",
+            question: "In a Galvanic cell (Zn to Cu), current flows from Zn to Cu when external opposing voltage is:",
+            options: ["< 1.1 V", "1.1 V", "> 1.1 V", "Any of the above"],
+            correct: 0,
+            topic: "Electrochemistry",
+            chapter: "Electrochemistry",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `Standard EMF of Zn-Cu cell: E°cell = 0.34 - (-0.76) = 1.1 V<br><br>• External voltage < E_cell → cell functions normally, current flows ✅<br>• External voltage = E_cell → no current (equilibrium)<br>• External voltage > E_cell → current reverses (electrolysis)<br><br>Answer: <span class="correct-answer-highlight">< 1.1 V</span><br><br><strong>Key Concept:</strong> A galvanic cell drives current when the opposing voltage is less than its EMF. At exactly E_cell, it's at equilibrium.`
+        },
+        {
+            id: "gc16",
+            question: "50% completion of a first order reaction takes 16 minutes. The fraction that would react in 32 minutes is:",
+            options: ["1/2", "1/4", "1/8", "3/4"],
+            correct: 3,
+            topic: "Chemical Kinetics",
+            chapter: "Chemical Kinetics",
+            difficulty: "medium",
+            exam: "neet",
+            solution: `t₁/₂ = 16 min. In 32 min = 2 half-lives:<br><br>After 1st half-life (16 min): 50% remains<br>After 2nd half-life (32 min): 25% remains<br><br><span class="formula">Fraction reacted = 1 - 1/4 = 3/4</span><br><br>Answer: <span class="correct-answer-highlight">3/4</span><br><br><strong>Key Concept:</strong> For first order: fraction remaining after n half-lives = (1/2)ⁿ. After 2 half-lives: (1/2)² = 1/4 remains, so 3/4 reacted.`
+        },
+        {
+            id: "gc17",
+            question: "The compound of Xenon with the lowest bond angle is:",
+            options: ["XeF₂", "XeO₃", "XeO₄", "XeF₄"],
+            correct: 3,
+            topic: "Chemical Bonding",
+            chapter: "The p-Block Elements",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `Bond angles:<br>• XeF₂: linear → 180°<br>• XeO₃: pyramidal → ~103°<br>• XeO₄: tetrahedral → 109.5°<br>• XeF₄: square planar → <span class="correct-answer-highlight">90°</span> (lowest!)<br><br><strong>Hybridization:</strong><br>• XeF₂: sp³d (3 lone pairs) → linear<br>• XeO₃: sp³ (1 lone pair) → pyramidal<br>• XeO₄: sp³ → tetrahedral<br>• XeF₄: sp³d² (2 lone pairs) → square planar<br><br><strong>Key Concept:</strong> XeF₄ has 90° F-Xe-F angles because of its square planar geometry (sp³d² with 2 lone pairs axial).`
+        },
+        {
+            id: "gc18",
+            question: "Which of the following statement is NOT correct?",
+            options: ["La(OH)₃ is less basic than Lu(OH)₃", "In lanthanide series, ionic radius of Ln³⁺ decreases", "La is actually a transition series element", "Atomic radii of Zr and Hf are same due to lanthanide contraction"],
+            correct: 0,
+            topic: "d and f Block Elements",
+            chapter: "The d- and f-Block Elements",
+            difficulty: "hard",
+            exam: "neet",
+            solution: `<strong>Option 1 is INCORRECT:</strong> La(OH)₃ is MORE basic than Lu(OH)₃!<br><br>In lanthanides, as we move from La to Lu:<br>• Ionic radius decreases (lanthanide contraction)<br>• Covalent character of M-OH bond increases<br>• Basicity DECREASES: La(OH)₃ > ... > Lu(OH)₃<br><br>Other statements are all correct:<br>2) ✅ Ln³⁺ radius decreases across the series<br>3) ✅ La is sometimes classified as d-block transition element<br>4) ✅ Zr and Hf have nearly identical radii due to lanthanide contraction<br><br>Answer: <span class="correct-answer-highlight">La(OH)₃ is less basic than Lu(OH)₃ — this is WRONG</span>`
         },
     ],
 
